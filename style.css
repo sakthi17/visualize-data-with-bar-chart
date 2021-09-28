@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway:500");
+@import url("https://fonts.googleapis.com/css?family=Hind");
+body {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQYV2NMKL/ty4ADMIIkF3SqbsYmP+gkAayXGgfe8HOVAAAAAElFTkSuQmCC") repeat;
+}
+
+.chart {
+  height: auto;
+  width: 950px;
+  margin: 50px auto;
+  background-color: white;
+  box-shadow: 5px 10px 25px #888888;
+}
+
+.title {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding: 15px 10px;
+  margin: 0px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis .tick text {
+  font-family: sans-serif;
+  font-size: 13px;
+}
+.axis text.label {
+  fill: #000;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+g.bars rect {
+  fill: #2c7fb8;
+}
+g.bars rect:hover {
+  fill: orange;
+}
+
+#tooltip {
+  display: inline-block;
+  position: absolute;
+  pointer-events: none;
+  height: auto;
+  width: 125px;
+  transform: translate(16%, -10%);
+  text-align: left;
+  font-size: 13px;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #fa9fb5;
+  opacity: 0;
+  border-radius: 10px;
+}
+#tooltip p {
+  margin: 3px;
+  padding-left: 5px;
+}
+
+.bigtext {
+  font-size: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#description {
+  font-size: 13px;
+  color: blue;
+  font-family: "Hind", sans-serif;
+  text-align: center;
+  margin: 15px;
+  padding-bottom: 25px;
+}
